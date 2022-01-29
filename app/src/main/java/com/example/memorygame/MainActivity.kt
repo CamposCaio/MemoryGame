@@ -2,17 +2,23 @@ package com.example.memorygame
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.GridLayout
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        createMemoryBoard()
+    }
 
-        rvBoard.adapter = MemoryBoardAdapter(this, 8)
+    private fun createMemoryBoard() {
+        val numRows = 4
+        val numColumns = 2
+
+        rvBoard.adapter = MemoryBoardAdapter(this, numRows, numColumns)
         rvBoard.setHasFixedSize(true)
-        rvBoard.layoutManager = GridLayoutManager(this, 2)
+        rvBoard.layoutManager = GridLayoutManager(this, numColumns)
     }
 }

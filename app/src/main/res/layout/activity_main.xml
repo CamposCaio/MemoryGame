@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/llGameInfo"
+        android:id="@+id/linearLayoutGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorSecondaryVariant"
@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Jogadas: 0"
+                android:text="@string/num_moves"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </androidx.cardview.widget.CardView>
 
@@ -44,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Acertos: 0 / 4"
+                android:text="@string/num_pairs"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </androidx.cardview.widget.CardView>
 
@@ -54,9 +54,13 @@
         android:id="@+id/rvBoard"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:overScrollMode="never"
-        app:layout_constraintBottom_toTopOf="@+id/llGameInfo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutGame"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
