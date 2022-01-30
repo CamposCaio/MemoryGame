@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/drawable/ic_bed.xml" value="0.1" />
+        <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/drawable/ic_round_waves.xml" value="0.138" />
+        <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/drawable/ic_watch.xml" value="0.138" />
+        <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Caio/AndroidStudioProjects/MemoryGame/app/src/main/res/layout/memory_card.xml" value="0.25" />
       </map>
     </option>
